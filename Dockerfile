@@ -16,14 +16,14 @@ RUN pip install -U gsutil
 
 RUN pip install cherrypy
 
-RUN mkdir -p /home/gcs-service/auth
-COPY ./auth/* /home/gcs-service/auth/
-WORKDIR /home/gcs-service/auth/
+RUN mkdir -p /home/gcs-cargoship/auth
+COPY ./auth/* /home/gcs-cargoship/auth/
+WORKDIR /home/gcs-cargoship/auth/
 RUN ./auth-gsutil.sh "gsutil config -e"
 
-RUN mkdir -p /home/gcs-service/web
-COPY ./web/* /home/gcs-service/web/
-WORKDIR /home/gcs-service/web
+RUN mkdir -p /home/gcs-cargoship/web
+COPY ./web/* /home/gcs-cargoship/web/
+WORKDIR /home/gcs-cargoship/web
 
 
 #COPY . /

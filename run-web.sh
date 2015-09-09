@@ -4,7 +4,7 @@
 
 source .env
 
-docker run -it -p 8080:8080 -v $(pwd)/files:/home/gcs-service/files \
+docker run -it -p 8080:8080 -v $(pwd)/files:/home/gcs-cargoship/files \
 	-e GCS_BUCKET_NAME="$GCS_BUCKET_NAME" \
 	-e GC_SECRET_PATH="$GC_SECRET_PATH" \
 	-e GC_SECRET_PASSWORD="$GC_SECRET_PASSWORD" \

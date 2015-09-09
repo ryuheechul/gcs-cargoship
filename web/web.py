@@ -5,7 +5,7 @@ import subprocess
 import os
 #import json
 
-file_path = '/home/gcs-service/files/'
+file_path = '/home/gcs-cargoship/files/'
 bucket_name = os.environ['GCS_BUCKET_NAME']
 bucket_url = 'gs://' + bucket_name
 secret_path = os.environ['GC_SECRET_PATH']
