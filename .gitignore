@@ -1,0 +1,4 @@
+auth/auth-gsutil.sh
+auth/secret.p12
+files/
+.env
