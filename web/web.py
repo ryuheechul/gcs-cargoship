@@ -22,6 +22,7 @@ def run_cmd(cmd):
 	return returncode, out + err
 
 cherrypy.server.socket_host = '0.0.0.0'
+cherrypy.server.socket_port = int(os.environ['CHERRYPY_PORT'])
 
 class HelloWorld(object):
 	@cherrypy.expose

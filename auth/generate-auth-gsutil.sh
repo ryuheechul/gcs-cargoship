@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 source ../.env
 cat_template=$(cat auth-gsutil-template.sh)

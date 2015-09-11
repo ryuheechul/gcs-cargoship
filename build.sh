@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/bash -e
 cd auth
 ./generate-auth-gsutil.sh
 cd ..
-docker build -t python-gsutil .
+docker build -t gcs-cargoship .
