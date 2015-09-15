@@ -47,8 +47,8 @@ ex)
 GCS_BUCKET_NAME="fuse-test"
 GC_SECRET_PATH="/home/gcs-cargoship/auth/secret.p12"
 GC_SECRET_PASSWORD="notasecret" 
-GC_SERVICE_ACCOUNT="635029189901-jmlocts81e3gmk1f6d3qbrjoj7ljf8t5@developer.gserviceaccount.com"
-GC_PROJECT_ID="appsolid-1029"
+GC_SERVICE_ACCOUNT="random_id@developer.gserviceaccount.com"
+GC_PROJECT_ID="project-id-1234"
 ```
 
 ### 2. run with docker
